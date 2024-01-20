@@ -3,10 +3,10 @@ import 'home.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
-  runApp(Order());
+  runApp(ListProduct_Page());
 }
 
-class Order extends StatelessWidget {
+class ListProduct_Page extends StatelessWidget {
   // use this controller to ge what user type
   final _textController = TextEditingController();
 

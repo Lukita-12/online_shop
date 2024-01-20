@@ -3,10 +3,10 @@ import 'home.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
-  runApp(Order());
+  runApp(Account_Page());
 }
 
-class Order extends StatelessWidget {
+class Account_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -198,53 +198,60 @@ class Order extends StatelessWidget {
                 width: double.infinity,
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 12.0, top: 5.0, right: 12.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                      const EdgeInsets.only(left: 12.0, top: 0.0, right: 12.0),
+                  child: Stack(
+                    alignment: Alignment(0, 0), // Align to top-left corner
                     children: [
-                      Icon(
-                        Icons.note_alt,
-                        size: 24,
-                        color: Color(0xFF23ac9d),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 12.0),
-                        child: Text(
-                          'Order',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.note_alt,
+                            size: 24,
+                            color: Color(0xFF23ac9d),
                           ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 200.0),
-                        child: Text(
-                          'History',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 12.0),
+                            child: Text(
+                              'Order',
+                              style: TextStyle(
+                                fontFamily: 'Outfit',
+                                fontWeight: FontWeight.w500,
+                                fontSize: 16,
+                                color: Color(0xFF14181B),
+                              ),
+                            ),
                           ),
-                        ),
+                          // Add your widgets inside the Row here
+                        ],
                       ),
-
-                      // Add your widgets inside the Row here
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            'History',
+                            style: TextStyle(
+                              fontFamily: 'Readex Pro',
+                              fontWeight: FontWeight.w400,
+                              fontSize: 14,
+                              color: Color(0xFF57636C),
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
               ),
 
               Container(
-                height: 100,
-                color: Color(0xFFFFFFFF),
+                height: 80,
+                color: Color(0xFFF1F3F4),
                 width: double.infinity,
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Container(
@@ -290,7 +297,6 @@ class Order extends StatelessWidget {
                         ],
                       ),
                     ),
-
                     Container(
                       height: 85,
                       color: Colors.transparent,
@@ -334,7 +340,6 @@ class Order extends StatelessWidget {
                         ],
                       ),
                     ),
-
                     Container(
                       height: 85,
                       color: Colors.transparent,
@@ -378,7 +383,6 @@ class Order extends StatelessWidget {
                         ],
                       ),
                     ),
-
                     Container(
                       height: 85,
                       color: Colors.transparent,
@@ -422,7 +426,6 @@ class Order extends StatelessWidget {
                         ],
                       ),
                     ),
-
                     // Add your widgets inside the Row here
                   ],
                 ),
@@ -435,42 +438,52 @@ class Order extends StatelessWidget {
                 width: double.infinity,
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 12.0, top: 5.0, right: 12.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                      const EdgeInsets.only(left: 12.0, top: 0.0, right: 12.0),
+                  child: Stack(
+                    alignment: Alignment(0, 0), // Align to top-left corner
                     children: [
-                      Icon(
-                        Icons.phone_iphone,
-                        size: 24,
-                        color: Color(0xFF23ac9d),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 12.0),
-                        child: Text(
-                          'Credit, Bill & Ticket',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.phone_iphone,
+                            size: 24,
+                            color: Color(0xFF23ac9d),
                           ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 70.0),
-                        child: Text(
-                          'Order History >',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 12.0),
+                            child: Text(
+                              'Credit, Bill & Ticket',
+                              style: TextStyle(
+                                fontFamily: 'Outfit',
+                                fontWeight: FontWeight.w500,
+                                fontSize: 16,
+                                color: Color(0xFF14181B),
+                              ),
+                            ),
                           ),
-                        ),
+                          // Add your widgets inside the Row here
+                        ],
                       ),
-
-                      // Add your widgets inside the Row here
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.only(left: 70.0),
+                            child: Text(
+                              'Order History',
+                              style: TextStyle(
+                                fontFamily: 'Readex Pro',
+                                fontWeight: FontWeight.w500,
+                                fontSize: 14,
+                                color: Color(0xFF57636C),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -483,7 +496,7 @@ class Order extends StatelessWidget {
                 width: double.infinity,
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 12.0, top: 5.0, right: 12.0),
+                      const EdgeInsets.only(left: 12.0, top: 0.0, right: 12.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -498,26 +511,13 @@ class Order extends StatelessWidget {
                         child: Text(
                           'Food',
                           style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
+                            fontFamily: 'Outfit',
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                             color: Color(0xFF14181B),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 245.0),
-                        child: Text(
-                          '>',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
-                          ),
-                        ),
-                      ),
-
                       // Add your widgets inside the Row here
                     ],
                   ),
@@ -531,42 +531,49 @@ class Order extends StatelessWidget {
                 width: double.infinity,
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 12.0, top: 5.0, right: 12.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                      const EdgeInsets.only(left: 12.0, top: 0.0, right: 12.0),
+                  child: Stack(
+                    alignment: Alignment(0, 0), // Align to top-left corner
                     children: [
-                      Icon(
-                        Icons.shopping_bag,
-                        size: 24,
-                        color: Color(0xFF23ac9d),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 12.0),
-                        child: Text(
-                          'Buy Again ',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.shopping_bag,
+                            size: 24,
+                            color: Color(0xFF23ac9d),
                           ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 80.0),
-                        child: Text(
-                          'See Other Products  >',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 12.0),
+                            child: Text(
+                              'Buy Again ',
+                              style: TextStyle(
+                                fontFamily: 'Outfit',
+                                fontWeight: FontWeight.w500,
+                                fontSize: 16,
+                                color: Color(0xFF14181B),
+                              ),
+                            ),
                           ),
-                        ),
+                          // Add your widgets inside the Row here
+                        ],
                       ),
-
-                      // Add your widgets inside the Row here
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            'See Other Products',
+                            style: TextStyle(
+                              fontFamily: 'Readex Pro',
+                              fontWeight: FontWeight.w500,
+                              fontSize: 14,
+                              color: Color(0xFF57636C),
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -881,42 +888,49 @@ class Order extends StatelessWidget {
                 width: double.infinity,
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 12.0, top: 5.0, right: 12.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.center,
+                      const EdgeInsets.only(left: 12.0, top: 0.0, right: 12.0),
+                  child: Stack(
+                    alignment: Alignment(0, 0), // Align to top-left corner
                     children: [
-                      Icon(
-                        Icons.credit_card_outlined,
-                        size: 24,
-                        color: Color(0xFF23ac9d),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 12.0),
-                        child: Text(
-                          'Membership',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Icon(
+                            Icons.credit_card_outlined,
+                            size: 24,
+                            color: Color(0xFF23ac9d),
                           ),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 160.0),
-                        child: Text(
-                          'Silver >',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 12.0),
+                            child: Text(
+                              'Membership',
+                              style: TextStyle(
+                                fontFamily: 'Outfit',
+                                fontWeight: FontWeight.w500,
+                                fontSize: 16,
+                                color: Color(0xFF14181B),
+                              ),
+                            ),
                           ),
-                        ),
+                          // Add your widgets inside the Row here
+                        ],
                       ),
-
-                      // Add your widgets inside the Row here
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Silver',
+                            style: TextStyle(
+                              fontFamily: 'Readex Pro',
+                              fontWeight: FontWeight.w500,
+                              fontSize: 14,
+                              color: Color(0xFF57636C),
+                            ),
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -929,7 +943,7 @@ class Order extends StatelessWidget {
                 width: double.infinity,
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 12.0, top: 5.0, right: 12.0),
+                      const EdgeInsets.only(left: 12.0, top: 0.0, right: 12.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -944,26 +958,13 @@ class Order extends StatelessWidget {
                         child: Text(
                           'Favorite',
                           style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
+                            fontFamily: 'Outfit',
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                             color: Color(0xFF14181B),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 228.0),
-                        child: Text(
-                          '>',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
-                          ),
-                        ),
-                      ),
-
                       // Add your widgets inside the Row here
                     ],
                   ),
@@ -977,7 +978,7 @@ class Order extends StatelessWidget {
                 width: double.infinity,
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 12.0, top: 5.0, right: 12.0),
+                      const EdgeInsets.only(left: 12.0, top: 0.0, right: 12.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -992,26 +993,13 @@ class Order extends StatelessWidget {
                         child: Text(
                           'Last Seen',
                           style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
+                            fontFamily: 'Outfit',
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                             color: Color(0xFF14181B),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 215.0),
-                        child: Text(
-                          '>',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
-                          ),
-                        ),
-                      ),
-
                       // Add your widgets inside the Row here
                     ],
                   ),
@@ -1025,7 +1013,7 @@ class Order extends StatelessWidget {
                 width: double.infinity,
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 12.0, top: 5.0, right: 12.0),
+                      const EdgeInsets.only(left: 12.0, top: 0.0, right: 12.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1040,26 +1028,13 @@ class Order extends StatelessWidget {
                         child: Text(
                           'Voucher',
                           style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
+                            fontFamily: 'Outfit',
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                             color: Color(0xFF14181B),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 227.0),
-                        child: Text(
-                          '>',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
-                          ),
-                        ),
-                      ),
-
                       // Add your widgets inside the Row here
                     ],
                   ),
@@ -1073,7 +1048,7 @@ class Order extends StatelessWidget {
                 width: double.infinity,
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 12.0, top: 5.0, right: 12.0),
+                      const EdgeInsets.only(left: 12.0, top: 0.0, right: 12.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1088,26 +1063,13 @@ class Order extends StatelessWidget {
                         child: Text(
                           'Help',
                           style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
+                            fontFamily: 'Outfit',
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                             color: Color(0xFF14181B),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 250.0),
-                        child: Text(
-                          '>',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
-                          ),
-                        ),
-                      ),
-
                       // Add your widgets inside the Row here
                     ],
                   ),
@@ -1121,7 +1083,7 @@ class Order extends StatelessWidget {
                 width: double.infinity,
                 child: Padding(
                   padding:
-                      const EdgeInsets.only(left: 12.0, top: 5.0, right: 12.0),
+                      const EdgeInsets.only(left: 12.0, top: 0.0, right: 12.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.center,
@@ -1134,28 +1096,15 @@ class Order extends StatelessWidget {
                       Padding(
                         padding: const EdgeInsets.only(left: 12.0),
                         child: Text(
-                          'call center',
+                          'Call Center',
                           style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
+                            fontFamily: 'Outfit',
+                            fontWeight: FontWeight.w500,
+                            fontSize: 16,
                             color: Color(0xFF14181B),
                           ),
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 215.0),
-                        child: Text(
-                          '>',
-                          style: TextStyle(
-                            fontFamily: 'Readex Pro',
-                            fontWeight: FontWeight.w400,
-                            fontSize: 14,
-                            color: Color(0xFF14181B),
-                          ),
-                        ),
-                      ),
-
                       // Add your widgets inside the Row here
                     ],
                   ),

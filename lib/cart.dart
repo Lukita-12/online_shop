@@ -3,7 +3,7 @@ import 'home.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
-  runApp(Cart());
+  runApp(Cart_Page());
 }
 
 class MyCheckboxWidget extends StatefulWidget {
@@ -11,7 +11,7 @@ class MyCheckboxWidget extends StatefulWidget {
   _MyCheckboxWidgetState createState() => _MyCheckboxWidgetState();
 }
 
-class Cart extends StatelessWidget {
+class Cart_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

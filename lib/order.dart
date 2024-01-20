@@ -3,10 +3,10 @@ import 'home.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 void main() {
-  runApp(Order());
+  runApp(Order_Page());
 }
 
-class Order extends StatelessWidget {
+class Order_Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
