@@ -12,7 +12,7 @@ class History_Page extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xFF23ac9d),
+          backgroundColor: Color(0xFFF58D93),
           elevation: 2,
           leading: IconButton(
             icon: Icon(
@@ -209,7 +209,7 @@ class History_Page extends StatelessWidget {
                                         fontFamily: 'Outfit',
                                         fontWeight: FontWeight.w600,
                                         fontSize: 18,
-                                        color: Color(0xFF23ac9d),
+                                        color: Color(0xFFF5347F),
                                       ),
                                     ),
                                   ],
@@ -382,7 +382,7 @@ class History_Page extends StatelessWidget {
                                         fontFamily: 'Outfit',
                                         fontWeight: FontWeight.w600,
                                         fontSize: 18,
-                                        color: Color(0xFF23ac9d),
+                                        color: Color(0xFFF5347F),
                                       ),
                                     ),
                                   ],
@@ -555,7 +555,7 @@ class History_Page extends StatelessWidget {
                                         fontFamily: 'Outfit',
                                         fontWeight: FontWeight.w600,
                                         fontSize: 18,
-                                        color: Color(0xFF23ac9d),
+                                        color: Color(0xFFF5347F),
                                       ),
                                     ),
                                   ],
@@ -728,7 +728,7 @@ class History_Page extends StatelessWidget {
                                         fontFamily: 'Outfit',
                                         fontWeight: FontWeight.w600,
                                         fontSize: 18,
-                                        color: Color(0xFF23ac9d),
+                                        color: Color(0xFFF5347F),
                                       ),
                                     ),
                                   ],

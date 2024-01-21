@@ -12,7 +12,7 @@ class Order_Page extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xFF23ac9d),
+          backgroundColor: Color(0xFFF58D93),
           elevation: 2,
           leading: IconButton(
             icon: Icon(
@@ -73,7 +73,7 @@ class Order_Page extends StatelessWidget {
                                 child: Icon(
                                   Icons.location_on_sharp,
                                   size: 24,
-                                  color: Color(0xFF23ac9d),
+                                  color: Color(0xFFF5347F),
                                 ),
                               ),
                               Text(
@@ -82,7 +82,7 @@ class Order_Page extends StatelessWidget {
                                   fontFamily: 'Outfit',
                                   fontWeight: FontWeight.w500,
                                   fontSize: 16,
-                                  color: Color(0xFF23ac9d),
+                                  color: Color(0xFFF5347F),
                                 ),
                               )
                             ],
@@ -230,11 +230,12 @@ class Order_Page extends StatelessWidget {
                                   height: 30,
                                   color: Colors.transparent,
                                   child: Column(
-                                    mainAxisAlignment: MainAxisAlignment.end,
+                                    mainAxisAlignment: MainAxisAlignment.start,
                                     crossAxisAlignment:
                                         CrossAxisAlignment.start,
                                     children: [
                                       Stack(
+                                        alignment: Alignment.center,
                                         children: [
                                           Row(
                                             mainAxisAlignment:
@@ -307,7 +308,7 @@ class Order_Page extends StatelessWidget {
                               child: Icon(
                                 FontAwesomeIcons.truck,
                                 size: 18,
-                                color: Color(0xFF23ac9d),
+                                color: Color(0xFFF5347F),
                               ),
                             ),
                             Text(
@@ -316,7 +317,7 @@ class Order_Page extends StatelessWidget {
                                 fontFamily: 'Outfit',
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16,
-                                color: Color(0xFF23ac9d),
+                                color: Color(0xFFF5347F),
                               ),
                             )
                           ],
@@ -536,7 +537,7 @@ class Order_Page extends StatelessWidget {
                                       child: Icon(
                                         Icons.monetization_on_outlined,
                                         size: 24,
-                                        color: Color(0xFF23ac9d),
+                                        color: Color(0xFFF5347F),
                                       ),
                                     ),
                                     Text(
@@ -545,7 +546,7 @@ class Order_Page extends StatelessWidget {
                                         fontFamily: 'Outfit',
                                         fontWeight: FontWeight.w500,
                                         fontSize: 16,
-                                        color: Color(0xFF23ac9d),
+                                        color: Color(0xFFF5347F),
                                       ),
                                     ),
                                   ],
@@ -662,7 +663,7 @@ class Order_Page extends StatelessWidget {
                               child: Icon(
                                 Icons.content_paste_outlined,
                                 size: 24,
-                                color: Color(0xFF23ac9d),
+                                color: Color(0xFFF5347F),
                               ),
                             ),
                             Text(
@@ -671,7 +672,7 @@ class Order_Page extends StatelessWidget {
                                 fontFamily: 'Outfit',
                                 fontWeight: FontWeight.w500,
                                 fontSize: 16,
-                                color: Color(0xFF23ac9d),
+                                color: Color(0xFFF5347F),
                               ),
                             ),
                           ],
@@ -851,6 +852,69 @@ class Order_Page extends StatelessWidget {
                         ),
                       ),
                     ],
+                  ),
+                ),
+              ),
+              Padding(
+                padding: const EdgeInsets.only(top: 0.0),
+                child: Container(
+                  height: 50,
+                  width: double.infinity,
+                  color: Color(0xFFF1F3F4),
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 12.0, right: 12.0),
+                    child: Stack(
+                      alignment: Alignment(0, 0), // Align to top-left corner
+                      children: [
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.start,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            Text(
+                              'Total: \$ 98.97',
+                              style: TextStyle(
+                                fontFamily: 'Outfit',
+                                fontWeight: FontWeight.w500,
+                                fontSize: 18,
+                                color: Color(0xFF14181B),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.center,
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {
+                                // Add your actual onPressed callback here
+                              },
+                              style: ElevatedButton.styleFrom(
+                                primary: Color(0xFFF58D93), // Fill color
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                ),
+                                padding: EdgeInsets.symmetric(horizontal: 24),
+                              ),
+                              child: Container(
+                                height: 45, // Height
+                                child: Center(
+                                  child: Text(
+                                    'Pay Now',
+                                    style: TextStyle(
+                                      fontFamily: 'Outfit',
+                                      fontWeight: FontWeight.w500,
+                                      fontSize: 18,
+                                      color: Color(0xFFFFFFFF),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 ),
               ),

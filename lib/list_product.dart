@@ -15,7 +15,7 @@ class ListProduct_Page extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xFF23ac9d),
+          backgroundColor: Color(0xFFF58D93),
           elevation: 2,
           leading: IconButton(
             icon: Icon(
@@ -55,7 +55,7 @@ class ListProduct_Page extends StatelessWidget {
               Container(
                 height: 50,
                 width: double.infinity,
-                color: Color(0xFF23ac9d),
+                color: Color(0xFFF58D93),
                 child: Padding(
                   padding: const EdgeInsets.only(
                       top: 6.0, left: 12.0, bottom: 6.0, right: 12.0),
@@ -99,7 +99,7 @@ class ListProduct_Page extends StatelessWidget {
                           fontWeight: FontWeight.w600,
                           fontSize: 16,
                           fontStyle: FontStyle.italic,
-                          color: Color(0xFF23ac9d),
+                          color: Color(0xFFF5347F),
                         ),
                       ),
                       Text(
@@ -109,7 +109,7 @@ class ListProduct_Page extends StatelessWidget {
                           fontWeight: FontWeight.w500,
                           fontSize: 14,
                           fontStyle: FontStyle.italic,
-                          color: Color(0xFF23ac9d),
+                          color: Color(0xFFF5347F),
                         ),
                       ),
                     ],
@@ -158,7 +158,7 @@ class ListProduct_Page extends StatelessWidget {
                               ),
                               child: Image(
                                 image: NetworkImage(
-                                    'https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//catalog-image/106/MTA-141889074/brd-44261_sepatu-sneakers-pria-k-16-sepatu-jalan-jalan-pria-sepatu-sneakers-kekinian-sepatu-pria-keren-terbaru-sepatu-sneakers-pria-untuk-hangout-casual_full01-3733e6e6.jpg'),
+                                    'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcRFh6jmy_OUxp0G2AwkLr2nzBdofbSbGvEaHUAQSQF9LJVSD_v_'),
                                 height: 200,
                                 width: 200,
                                 fit: BoxFit.cover,
@@ -183,7 +183,7 @@ class ListProduct_Page extends StatelessWidget {
                                     Icon(
                                       Icons.star,
                                       size: 20,
-                                      color: Color(0xFF23ac9d),
+                                      color: Color(0xFFF5347F),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(
@@ -194,7 +194,7 @@ class ListProduct_Page extends StatelessWidget {
                                           fontFamily: 'Outfit',
                                           fontWeight: FontWeight.w700,
                                           fontSize: 20,
-                                          color: Color(0xFF23ac9d),
+                                          color: Color(0xFFF5347F),
                                         ),
                                       ),
                                     ),
@@ -311,7 +311,7 @@ class ListProduct_Page extends StatelessWidget {
                                     Icon(
                                       Icons.star,
                                       size: 20,
-                                      color: Color(0xFF23ac9d),
+                                      color: Color(0xFFF5347F),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(
@@ -322,7 +322,7 @@ class ListProduct_Page extends StatelessWidget {
                                           fontFamily: 'Outfit',
                                           fontWeight: FontWeight.w700,
                                           fontSize: 20,
-                                          color: Color(0xFF23ac9d),
+                                          color: Color(0xFFF5347F),
                                         ),
                                       ),
                                     ),
@@ -439,7 +439,7 @@ class ListProduct_Page extends StatelessWidget {
                                     Icon(
                                       Icons.star,
                                       size: 20,
-                                      color: Color(0xFF23ac9d),
+                                      color: Color(0xFFF5347F),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(
@@ -450,7 +450,7 @@ class ListProduct_Page extends StatelessWidget {
                                           fontFamily: 'Outfit',
                                           fontWeight: FontWeight.w700,
                                           fontSize: 20,
-                                          color: Color(0xFF23ac9d),
+                                          color: Color(0xFFF5347F),
                                         ),
                                       ),
                                     ),
@@ -567,7 +567,7 @@ class ListProduct_Page extends StatelessWidget {
                                     Icon(
                                       Icons.star,
                                       size: 20,
-                                      color: Color(0xFF23ac9d),
+                                      color: Color(0xFFF5347F),
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(
@@ -578,7 +578,7 @@ class ListProduct_Page extends StatelessWidget {
                                           fontFamily: 'Outfit',
                                           fontWeight: FontWeight.w700,
                                           fontSize: 20,
-                                          color: Color(0xFF23ac9d),
+                                          color: Color(0xFFF5347F),
                                         ),
                                       ),
                                     ),

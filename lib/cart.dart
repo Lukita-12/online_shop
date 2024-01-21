@@ -17,7 +17,7 @@ class Cart_Page extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xFF23ac9d),
+          backgroundColor: Color(0xFFF58D93),
           elevation: 2,
           leading: IconButton(
             icon: Icon(
@@ -72,7 +72,7 @@ class Cart_Page extends StatelessWidget {
                           Icon(
                             FontAwesomeIcons.truck,
                             size: 24,
-                            color: Color(0xFF23ac9d),
+                            color: Color(0xFFF58D93),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 12.0),
@@ -307,7 +307,7 @@ class Cart_Page extends StatelessWidget {
                                     // Add your actual onPressed callback here
                                   },
                                   style: ElevatedButton.styleFrom(
-                                    primary: Color(0xFF23AC9D), // Fill color
+                                    primary: Color(0xFFF58D93), // Fill color
                                     shape: RoundedRectangleBorder(
                                       borderRadius: BorderRadius.circular(8.0),
                                     ),
@@ -354,7 +354,7 @@ class _MyCheckboxWidgetState extends State<MyCheckboxWidget> {
   Widget build(BuildContext context) {
     return Checkbox(
       value: isChecked,
-      activeColor: Color(0xFF23ac9d),
+      activeColor: Color(0xFFF5347F),
       onChanged: (value) {
         setState(() {
           isChecked = value!;

@@ -12,7 +12,7 @@ class Account_Page extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xFF23ac9d),
+          backgroundColor: Color(0xFFF58D93),
           elevation: 2,
           leading: IconButton(
             icon: Icon(
@@ -84,9 +84,9 @@ class Account_Page extends StatelessWidget {
                     Padding(
                       padding: const EdgeInsets.only(left: 300.0),
                       child: IconButton(
-                        iconSize: 25,
+                        iconSize: 28,
 
-                        color: const Color(0xFFf1f2f4), // Warna ikon
+                        color: const Color(0xFFFFFFFF), // Warna ikon
 
                         onPressed: () {
                           // Aksi yang ingin dilakukan saat tombol diklik
@@ -156,19 +156,19 @@ class Account_Page extends StatelessWidget {
                                           Text(
                                             'TiaraB',
                                             style: TextStyle(
-                                              fontFamily: 'Readex Pro',
+                                              fontFamily: 'Outfit',
                                               fontWeight: FontWeight.w600,
-                                              fontSize: 22,
-                                              color: Color(0xFFffffff),
+                                              fontSize: 26,
+                                              color: Color(0xFFFFFFFF),
                                             ),
                                           ),
                                           Text(
                                             'Silver Member',
                                             style: TextStyle(
                                               fontFamily: 'Readex Pro',
-                                              fontWeight: FontWeight.w400,
-                                              fontSize: 12,
-                                              color: Color(0xFFffffff),
+                                              fontWeight: FontWeight.w500,
+                                              fontSize: 16,
+                                              color: Color(0xFFFFFFFF),
                                             ),
                                           ),
 
@@ -191,7 +191,6 @@ class Account_Page extends StatelessWidget {
                   ],
                 ),
               ),
-
               Container(
                 height: 40,
                 color: Color(0xFFf1f3f4),
@@ -209,7 +208,7 @@ class Account_Page extends StatelessWidget {
                           Icon(
                             Icons.note_alt,
                             size: 24,
-                            color: Color(0xFF23ac9d),
+                            color: Color(0xFFF5347F),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 12.0),
@@ -245,7 +244,6 @@ class Account_Page extends StatelessWidget {
                   ),
                 ),
               ),
-
               Container(
                 height: 80,
                 color: Color(0xFFF1F3F4),
@@ -430,7 +428,6 @@ class Account_Page extends StatelessWidget {
                   ],
                 ),
               ),
-
 // Credit, Bill, Ticket
               Container(
                 height: 40,
@@ -449,7 +446,7 @@ class Account_Page extends StatelessWidget {
                           Icon(
                             Icons.phone_iphone,
                             size: 24,
-                            color: Color(0xFF23ac9d),
+                            color: Color(0xFFF5347F),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 12.0),
@@ -488,7 +485,6 @@ class Account_Page extends StatelessWidget {
                   ),
                 ),
               ),
-
 // Food
               Container(
                 height: 40,
@@ -504,7 +500,7 @@ class Account_Page extends StatelessWidget {
                       Icon(
                         Icons.fastfood_rounded,
                         size: 24,
-                        color: Color(0xFF23ac9d),
+                        color: Color(0xFFF5347F),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 12.0),
@@ -523,7 +519,6 @@ class Account_Page extends StatelessWidget {
                   ),
                 ),
               ),
-
 // Buy Again
               Container(
                 height: 40,
@@ -542,7 +537,7 @@ class Account_Page extends StatelessWidget {
                           Icon(
                             Icons.shopping_bag,
                             size: 24,
-                            color: Color(0xFF23ac9d),
+                            color: Color(0xFFF5347F),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 12.0),
@@ -578,7 +573,6 @@ class Account_Page extends StatelessWidget {
                   ),
                 ),
               ),
-
               Container(
                 width: double.infinity,
                 height: 150,
@@ -880,7 +874,6 @@ class Account_Page extends StatelessWidget {
                   ],
                 ),
               ),
-
 // Membership
               Container(
                 height: 40,
@@ -899,7 +892,7 @@ class Account_Page extends StatelessWidget {
                           Icon(
                             Icons.credit_card_outlined,
                             size: 24,
-                            color: Color(0xFF23ac9d),
+                            color: Color(0xFFF5347F),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(left: 12.0),
@@ -935,7 +928,6 @@ class Account_Page extends StatelessWidget {
                   ),
                 ),
               ),
-
 // Favorite
               Container(
                 height: 40,
@@ -951,7 +943,7 @@ class Account_Page extends StatelessWidget {
                       Icon(
                         Icons.favorite,
                         size: 24,
-                        color: Color(0xFF23ac9d),
+                        color: Color(0xFFF5347F),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 12.0),
@@ -970,7 +962,6 @@ class Account_Page extends StatelessWidget {
                   ),
                 ),
               ),
-
 // Last Seen
               Container(
                 height: 40,
@@ -986,7 +977,7 @@ class Account_Page extends StatelessWidget {
                       Icon(
                         Icons.timelapse_sharp,
                         size: 24,
-                        color: Color(0xFF23ac9d),
+                        color: Color(0xFFF5347F),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 12.0),
@@ -1005,7 +996,6 @@ class Account_Page extends StatelessWidget {
                   ),
                 ),
               ),
-
 // Voucher
               Container(
                 height: 40,
@@ -1021,7 +1011,7 @@ class Account_Page extends StatelessWidget {
                       Icon(
                         Icons.loyalty,
                         size: 24,
-                        color: Color(0xFF23ac9d),
+                        color: Color(0xFFF5347F),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 12.0),
@@ -1040,7 +1030,6 @@ class Account_Page extends StatelessWidget {
                   ),
                 ),
               ),
-
 // Help
               Container(
                 height: 40,
@@ -1056,7 +1045,7 @@ class Account_Page extends StatelessWidget {
                       Icon(
                         Icons.question_mark_sharp,
                         size: 24,
-                        color: Color(0xFF23ac9d),
+                        color: Color(0xFFF5347F),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 12.0),
@@ -1075,7 +1064,6 @@ class Account_Page extends StatelessWidget {
                   ),
                 ),
               ),
-
 // Call center
               Container(
                 height: 40,
@@ -1091,7 +1079,7 @@ class Account_Page extends StatelessWidget {
                       Icon(
                         Icons.headset_mic,
                         size: 24,
-                        color: Color(0xFF23ac9d),
+                        color: Color(0xFFF5347F),
                       ),
                       Padding(
                         padding: const EdgeInsets.only(left: 12.0),
@@ -1110,7 +1098,6 @@ class Account_Page extends StatelessWidget {
                   ),
                 ),
               ),
-
               // Add your widgets inside the Column here
             ],
           ),
