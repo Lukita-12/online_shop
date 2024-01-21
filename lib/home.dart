@@ -1,4 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'account.dart';
+import 'cart.dart';
+import 'history.dart';
+import 'list_product.dart';
+import 'order.dart';
 
 void main() {
   runApp(Home_Page());
@@ -11,35 +17,22 @@ class Home_Page extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Color(0xFF23ac9d),
+          iconTheme: IconThemeData(color: Color(0xFFFFFFFF)),
+          backgroundColor: Color(0xFFF58D93),
           elevation: 2,
           title: Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              IconButton(
-                icon: Icon(
-                  Icons.menu_sharp,
-                  size: 30,
-                  color: Color(0xFFf1f3f4),
-                ),
-                onPressed: () {
-                  // Add your onPressed callback here
-                },
-                iconSize: 60,
-                splashColor: Colors.transparent,
-                highlightColor: Colors.transparent,
-                padding: EdgeInsets.all(0),
-                splashRadius: 30,
-                tooltip: 'Menu',
-              ),
-              Center(
-                child: Text(
-                  'LustCart',
-                  style: TextStyle(
-                    fontFamily: 'Outfit',
-                    fontWeight: FontWeight.w400,
-                    fontSize: 26,
-                    color: Color(0xFFf1f3f4),
+              Flexible(
+                child: Center(
+                  child: Text(
+                    'LustCart',
+                    style: TextStyle(
+                      fontFamily: 'Outfit',
+                      fontWeight: FontWeight.w400,
+                      fontSize: 26,
+                      color: Color(0xFFf1f3f4),
+                    ),
                   ),
                 ),
               ),
@@ -47,8 +40,8 @@ class Home_Page extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 0.0),
                 child: IconButton(
                   icon: Icon(
-                    Icons.search_sharp,
-                    size: 30,
+                    FontAwesomeIcons.magnifyingGlass,
+                    size: 24,
                     color: Color(0xFFf1f3f4),
                   ),
                   onPressed: () {
@@ -61,6 +54,73 @@ class Home_Page extends StatelessWidget {
                   splashRadius: 30,
                   tooltip: 'Search',
                 ),
+              ),
+            ],
+          ),
+        ),
+        drawer: Drawer(
+          child: ListView(
+            children: [
+              const DrawerHeader(
+                decoration: BoxDecoration(
+                  color: Color(0xFFF58D93),
+                ),
+                child: Text(
+                  'Hello...',
+                  style: TextStyle(
+                    fontFamily: 'Outfit',
+                    color: Color(0xFFFFFFFF), // Text color
+                    fontSize: 24, // Text size
+                  ),
+                ),
+              ),
+              ListTile(
+                title: const Text(
+                  'Yapet Lukita_(21041052)',
+                  style: TextStyle(
+                    fontFamily: 'Outfit',
+                    fontWeight: FontWeight.w500,
+                    fontSize: 18,
+                    color: Color(0xFF14181B),
+                  ),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: const Text(
+                  'Syarwani_(21041041)',
+                  style: TextStyle(
+                    fontFamily: 'Outfit',
+                    fontWeight: FontWeight.w500,
+                    fontSize: 18,
+                    color: Color(0xFF14181B),
+                  ),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: const Text(
+                  'Juliana Wahab_(21041027)',
+                  style: TextStyle(
+                    fontFamily: 'Outfit',
+                    fontWeight: FontWeight.w500,
+                    fontSize: 18,
+                    color: Color(0xFF14181B),
+                  ),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                title: const Text(
+                  'Suci Indah Hartati_(21041030)',
+                  style: TextStyle(
+                    fontFamily: 'Outfit',
+                    fontWeight: FontWeight.w500,
+                    fontSize: 18,
+                    color: Color(0xFF14181B),
+                  ),
+                ),
+                onTap: () {},
               ),
             ],
           ),
@@ -119,136 +179,164 @@ class Home_Page extends StatelessWidget {
               ),
               Center(
                 child: Container(
-                  width: double.infinity, // Infinite width
+                  width: double.infinity,
                   height: 160.0,
-                  color: Colors.transparent, // Transparent fill color
+                  color: Colors.transparent,
                   child: Column(
-                    mainAxisAlignment:
-                        MainAxisAlignment.start, // Main Axis Alignment
-                    crossAxisAlignment:
-                        CrossAxisAlignment.center, // Cross Axis Alignment
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       Container(
-                        width: double.infinity, // Infinite width
+                        width: double.infinity,
                         height: 80.0,
-                        color: Colors.transparent, // Transparent fill color
+                        color: Colors.transparent,
                         child: Padding(
                           padding: EdgeInsets.only(top: 4.0),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Container(
-                                width: 80.0,
-                                height: double.infinity,
-                                color: Colors.transparent,
-                                padding: EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Stack(
-                                  alignment: Alignment
-                                      .center, // Default child alignment
-                                  children: [
-                                    Positioned(
-                                      top: 0,
-                                      left: 4,
-                                      child: IconButton(
-                                        icon: Icon(
-                                          Icons.home_sharp,
-                                          size: 30,
-                                          color: Color(0xFF23AC9D),
-                                        ),
-                                        onPressed: () {
-                                          // Add your onPressed logic here
-                                        },
-                                      ),
-                                    ),
-                                    Positioned(
-                                      top: 40,
-                                      child: Text(
-                                        'Home',
-                                        style: TextStyle(
-                                          fontFamily: 'Readex Pro',
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 14,
-                                          color: Color(0xFF23AC9D),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 0.0),
+                                child: Container(
+                                  width: 80.0,
+                                  height: double.infinity,
+                                  color: Colors.transparent,
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 12.0),
+                                  child: Stack(
+                                    alignment: Alignment
+                                        .center, // Default child alignment
+                                    children: [
+                                      Positioned(
+                                        top: 0,
+                                        left: 4,
+                                        child: IconButton(
+                                          icon: Icon(
+                                            Icons.home_sharp,
+                                            size: 30,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                          onPressed: () {
+                                            // Add your onPressed callback here
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      Home_Page()),
+                                            );
+                                          },
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                      Positioned(
+                                        top: 40,
+                                        child: Text(
+                                          'Home',
+                                          style: TextStyle(
+                                            fontFamily: 'Outfit',
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 14,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
-                              Container(
-                                width: 80.0,
-                                height: double.infinity,
-                                color: Colors.transparent,
-                                padding: EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Stack(
-                                  alignment: Alignment
-                                      .center, // Default child alignment
-                                  children: [
-                                    Positioned(
-                                      top: 0,
-                                      left: 5,
-                                      child: IconButton(
-                                        icon: Icon(
-                                          Icons.list_alt_rounded,
-                                          size: 30,
-                                          color: Color(0xFF23AC9D),
-                                        ),
-                                        onPressed: () {
-                                          // Add your onPressed logic here
-                                        },
-                                      ),
-                                    ),
-                                    Positioned(
-                                      top: 40,
-                                      child: Text(
-                                        'List',
-                                        style: TextStyle(
-                                          fontFamily: 'Readex Pro',
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 14,
-                                          color: Color(0xFF23AC9D),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20.0),
+                                child: Container(
+                                  width: 80.0,
+                                  height: double.infinity,
+                                  color: Colors.transparent,
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 12.0),
+                                  child: Stack(
+                                    alignment: Alignment
+                                        .center, // Default child alignment
+                                    children: [
+                                      Positioned(
+                                        top: 0,
+                                        left: 5,
+                                        child: IconButton(
+                                          icon: Icon(
+                                            Icons.list_alt_rounded,
+                                            size: 30,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                          onPressed: () {
+                                            // Add your onPressed callback here
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      ListProduct_Page()),
+                                            );
+                                          },
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                      Positioned(
+                                        top: 40,
+                                        child: Text(
+                                          'List',
+                                          style: TextStyle(
+                                            fontFamily: 'Outfit',
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 14,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
-                              Container(
-                                width: 80.0,
-                                height: double.infinity,
-                                color: Colors.transparent,
-                                padding: EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Stack(
-                                  alignment: Alignment
-                                      .center, // Default child alignment
-                                  children: [
-                                    Positioned(
-                                      top: 0,
-                                      left: 6,
-                                      child: IconButton(
-                                        icon: Icon(
-                                          Icons.shopping_cart_outlined,
-                                          size: 30,
-                                          color: Color(0xFF23AC9D),
-                                        ),
-                                        onPressed: () {
-                                          // Add your onPressed logic here
-                                        },
-                                      ),
-                                    ),
-                                    Positioned(
-                                      top: 40,
-                                      child: Text(
-                                        'Cart',
-                                        style: TextStyle(
-                                          fontFamily: 'Readex Pro',
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 14,
-                                          color: Color(0xFF23AC9D),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20.0),
+                                child: Container(
+                                  width: 80.0,
+                                  height: double.infinity,
+                                  color: Colors.transparent,
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 12.0),
+                                  child: Stack(
+                                    alignment: Alignment
+                                        .center, // Default child alignment
+                                    children: [
+                                      Positioned(
+                                        top: 0,
+                                        left: 6,
+                                        child: IconButton(
+                                          icon: Icon(
+                                            Icons.shopping_cart_outlined,
+                                            size: 30,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                          onPressed: () {
+                                            // Add your onPressed callback here
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      Cart_Page()),
+                                            );
+                                          },
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                      Positioned(
+                                        top: 40,
+                                        child: Text(
+                                          'Cart',
+                                          style: TextStyle(
+                                            fontFamily: 'Outfit',
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 14,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
@@ -264,118 +352,147 @@ class Home_Page extends StatelessWidget {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Container(
-                                width: 80.0,
-                                height: double.infinity,
-                                color: Colors.transparent,
-                                padding: EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Stack(
-                                  alignment: Alignment
-                                      .center, // Default child alignment
-                                  children: [
-                                    Positioned(
-                                      top: 0,
-                                      left: 5,
-                                      child: IconButton(
-                                        icon: Icon(
-                                          Icons.storefront_sharp,
-                                          size: 30,
-                                          color: Color(0xFF23AC9D),
-                                        ),
-                                        onPressed: () {
-                                          // Add your onPressed logic here
-                                        },
-                                      ),
-                                    ),
-                                    Positioned(
-                                      top: 40,
-                                      child: Text(
-                                        'Order',
-                                        style: TextStyle(
-                                          fontFamily: 'Readex Pro',
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 14,
-                                          color: Color(0xFF23AC9D),
+                              Padding(
+                                padding: const EdgeInsets.all(0.0),
+                                child: Container(
+                                  width: 80.0,
+                                  height: double.infinity,
+                                  color: Colors.transparent,
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 12.0),
+                                  child: Stack(
+                                    alignment: Alignment.center,
+                                    children: [
+                                      Positioned(
+                                        top: 0,
+                                        left: 5,
+                                        child: IconButton(
+                                          icon: Icon(
+                                            Icons.storefront_sharp,
+                                            size: 30,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                          onPressed: () {
+                                            // Add your onPressed callback here
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      Order_Page()),
+                                            );
+                                          },
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                      Positioned(
+                                        top: 40,
+                                        child: Text(
+                                          'Order',
+                                          style: TextStyle(
+                                            fontFamily: 'Outfit',
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 14,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
-                              Container(
-                                width: 80.0,
-                                height: double.infinity,
-                                color: Colors.transparent,
-                                padding: EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Stack(
-                                  alignment: Alignment
-                                      .center, // Default child alignment
-                                  children: [
-                                    Positioned(
-                                      top: 0,
-                                      left: 6,
-                                      child: IconButton(
-                                        icon: Icon(
-                                          Icons.manage_accounts_outlined,
-                                          size: 30,
-                                          color: Color(0xFF23AC9D),
-                                        ),
-                                        onPressed: () {
-                                          // Add your onPressed logic here
-                                        },
-                                      ),
-                                    ),
-                                    Positioned(
-                                      top: 40,
-                                      child: Text(
-                                        'Accounts',
-                                        style: TextStyle(
-                                          fontFamily: 'Readex Pro',
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 14,
-                                          color: Color(0xFF23AC9D),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20.0),
+                                child: Container(
+                                  width: 80.0,
+                                  height: double.infinity,
+                                  color: Colors.transparent,
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 12.0),
+                                  child: Stack(
+                                    alignment: Alignment
+                                        .center, // Default child alignment
+                                    children: [
+                                      Positioned(
+                                        top: 0,
+                                        left: 6,
+                                        child: IconButton(
+                                          icon: Icon(
+                                            Icons.manage_accounts_outlined,
+                                            size: 30,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                          onPressed: () {
+                                            // Add your onPressed callback here
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      Account_Page()),
+                                            );
+                                          },
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                      Positioned(
+                                        top: 40,
+                                        child: Text(
+                                          'Accounts',
+                                          style: TextStyle(
+                                            fontFamily: 'Outfit',
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 14,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
-                              Container(
-                                width: 80.0,
-                                height: double.infinity,
-                                color: Colors.transparent,
-                                padding: EdgeInsets.symmetric(horizontal: 12.0),
-                                child: Stack(
-                                  alignment: Alignment
-                                      .center, // Default child alignment
-                                  children: [
-                                    Positioned(
-                                      top: 0,
-                                      left: 4,
-                                      child: IconButton(
-                                        icon: Icon(
-                                          Icons.history_rounded,
-                                          size: 30,
-                                          color: Color(0xFF23AC9D),
-                                        ),
-                                        onPressed: () {
-                                          // Add your onPressed logic here
-                                        },
-                                      ),
-                                    ),
-                                    Positioned(
-                                      top: 40,
-                                      child: Text(
-                                        'History',
-                                        style: TextStyle(
-                                          fontFamily: 'Readex Pro',
-                                          fontWeight: FontWeight.normal,
-                                          fontSize: 14,
-                                          color: Color(0xFF23AC9D),
+                              Padding(
+                                padding: const EdgeInsets.only(left: 20.0),
+                                child: Container(
+                                  width: 80.0,
+                                  height: double.infinity,
+                                  color: Colors.transparent,
+                                  padding:
+                                      EdgeInsets.symmetric(horizontal: 12.0),
+                                  child: Stack(
+                                    alignment: Alignment
+                                        .center, // Default child alignment
+                                    children: [
+                                      Positioned(
+                                        top: 0,
+                                        left: 4,
+                                        child: IconButton(
+                                          icon: Icon(
+                                            Icons.history_rounded,
+                                            size: 30,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                          onPressed: () {
+                                            // Add your onPressed callback here
+                                            Navigator.push(
+                                              context,
+                                              MaterialPageRoute(
+                                                  builder: (context) =>
+                                                      History_Page()),
+                                            );
+                                          },
                                         ),
                                       ),
-                                    ),
-                                  ],
+                                      Positioned(
+                                        top: 40,
+                                        child: Text(
+                                          'History',
+                                          style: TextStyle(
+                                            fontFamily: 'Outfit',
+                                            fontWeight: FontWeight.normal,
+                                            fontSize: 14,
+                                            color: Color(0xFFF5347F),
+                                          ),
+                                        ),
+                                      ),
+                                    ],
+                                  ),
                                 ),
                               ),
                             ],
@@ -415,7 +532,7 @@ class Home_Page extends StatelessWidget {
                                       fontFamily: 'Outfit',
                                       fontWeight: FontWeight.w500,
                                       fontSize: 28,
-                                      color: Color(0xFFF1F3F4),
+                                      color: Color(0xFFF58D93),
                                     ),
                                   ),
                                 ),
@@ -434,7 +551,7 @@ class Home_Page extends StatelessWidget {
                                       fontFamily: 'Outfit',
                                       fontWeight: FontWeight.w500,
                                       fontSize: 18,
-                                      color: Color(0xFFDADCE0),
+                                      color: Color(0xFF57636C),
                                       // decoration: TextDecoration.underline,
                                     ),
                                   ),
@@ -950,7 +1067,7 @@ class Home_Page extends StatelessWidget {
                                       fontFamily: 'Outfit',
                                       fontWeight: FontWeight.w500,
                                       fontSize: 28,
-                                      color: Color(0xFF23AC9D),
+                                      color: Color(0xFFF58D93),
                                     ),
                                   ),
                                 ),
@@ -1275,7 +1392,7 @@ class Home_Page extends StatelessWidget {
                                       fontFamily: 'Outfit',
                                       fontWeight: FontWeight.w500,
                                       fontSize: 28,
-                                      color: Color(0xFF23AC9D),
+                                      color: Color(0xFFF58D93),
                                     ),
                                   ),
                                 ),
@@ -1618,7 +1735,7 @@ class Home_Page extends StatelessWidget {
                                         fontFamily: 'Outfit',
                                         fontWeight: FontWeight.w500,
                                         fontSize: 28,
-                                        color: Color(0xFF23AC9D),
+                                        color: Color(0xFFF58D93),
                                       ),
                                     ),
                                   ),
@@ -2094,6 +2211,48 @@ class Home_Page extends StatelessWidget {
               ),
             ],
           ),
+        ),
+        bottomNavigationBar: BottomNavigationBar(
+          type: BottomNavigationBarType.fixed,
+          selectedFontSize: 0.0,
+          items: const [
+            BottomNavigationBarItem(
+              icon: Icon(
+                FontAwesomeIcons.house,
+                color: Color(0xFFF58D93),
+                size: 24,
+              ),
+              label: 'Home',
+              backgroundColor: Color(0xFFFFFFFF),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                FontAwesomeIcons.list,
+                color: Color(0xFFF58D93),
+                size: 24,
+              ),
+              label: 'Search',
+              backgroundColor: Color(0xFFFFFFFF),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                FontAwesomeIcons.cartShopping,
+                color: Color(0xFFF58D93),
+                size: 24,
+              ),
+              label: 'Bag',
+              backgroundColor: Color(0xFFFFFFFF),
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(
+                FontAwesomeIcons.user,
+                color: Color(0xFFF58D93),
+                size: 24,
+              ),
+              label: 'User',
+              backgroundColor: Color(0xFFFFFFFF),
+            ),
+          ],
         ),
       ),
     );
